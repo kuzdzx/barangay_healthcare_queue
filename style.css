@@ -1,0 +1,203 @@
+    /* ==========================================
+   PANACEA HEALTH CENTER - MASTER STYLESHEET
+   ========================================== */
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f8fafe; 
+    color: #12263f; 
+}
+
+/* Sidebar CSS */
+.sidebar { 
+    background: #ffffff; 
+    border-right: 1px solid #edf2f9; 
+    height: 100vh; 
+    padding: 20px 15px; 
+    display: flex; 
+    flex-direction: column; 
+}
+.sidebar .brand { 
+    font-weight: 700; 
+    font-size: 1.25rem; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 30px; 
+    padding-left: 10px; 
+}
+.sidebar .brand-icon { 
+    background: #000; 
+    color: #fff; 
+    padding: 4px 8px; 
+    border-radius: 6px; 
+    font-size: 14px; 
+}
+.sidebar a.nav-link { 
+    color: #5e6e82; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    padding: 10px 15px; 
+    border-radius: 8px; 
+    margin-bottom: 5px; 
+    font-weight: 500; 
+    font-size: 0.95rem; 
+    transition: all 0.2s; 
+}
+.sidebar a.nav-link:hover { 
+    background: #f8fafe; 
+    color: #12263f; 
+}
+.sidebar a.nav-link.active { 
+    background: linear-gradient(90deg, #e3ffe5 0%, #e0f7fa 100%); 
+    color: #000; 
+    font-weight: 600; 
+}
+
+/* User Profile */
+.user-profile { 
+    margin-top: auto; 
+    padding: 15px 10px; 
+    border-top: 1px solid #edf2f9; 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+}
+.user-profile .avatar { 
+    width: 38px; 
+    height: 38px; 
+    background: #12263f; 
+    color: #fff; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-weight: 700; 
+    font-size: 1rem; 
+}
+.user-profile .info h6 { 
+    margin: 0; 
+    font-size: 0.9rem; 
+    color: #12263f; 
+    font-weight: 600; 
+}
+.user-profile .info a { 
+    color: #dc3545; 
+    text-decoration: none; 
+    font-size: 0.8rem; 
+}
+.user-profile .info a:hover { 
+    text-decoration: underline; 
+}
+
+/* Main Content Layout */
+.main-content { 
+    min-height: 100vh; 
+    padding: 0; 
+}
+.topbar { 
+    background: #ffffff; 
+    padding: 15px 30px; 
+    border-bottom: 1px solid #edf2f9; 
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+    font-size: 0.9rem; 
+    font-weight: 500; 
+    color: #5e6e82; 
+}
+.topbar .active-tab { 
+    background: #f8fafe; 
+    padding: 6px 12px; 
+    border-radius: 6px; 
+    color: #12263f; 
+    border: 1px solid #edf2f9; 
+}
+.content-pad { 
+    padding: 30px; 
+}
+
+/* Cards & Forms */
+.content-card, .table-card { 
+    background: #fff; 
+    border: 1px solid #edf2f9; 
+    border-radius: 12px; 
+    padding: 30px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02); 
+}
+.form-label { 
+    font-size: 0.85rem; 
+    font-weight: 600; 
+    color: #5e6e82; 
+    margin-bottom: 6px; 
+}
+.form-control, .form-select { 
+    border: 1px solid #edf2f9; 
+    border-radius: 8px; 
+    padding: 10px 15px; 
+    font-size: 0.95rem; 
+}
+.form-control:focus, .form-select:focus { 
+    border-color: #12263f; 
+    box-shadow: none; 
+}
+.btn-dark { 
+    background: #12263f; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    font-weight: 500; 
+}
+.btn-dark:hover { 
+    background: #1a365d; 
+}
+
+/* Tables */
+.table thead th { 
+    border-bottom: 2px solid #edf2f9; 
+    color: #8898aa; 
+    font-weight: 600; 
+    font-size: 0.85rem; 
+    text-transform: uppercase; 
+}
+.table tbody td { 
+    border-bottom: 1px solid #edf2f9; 
+    vertical-align: middle; 
+    font-size: 0.9rem; 
+}
+
+/* Stats Cards */
+.stat-card { 
+    background: #fff; 
+    border: 1px solid #edf2f9; 
+    border-radius: 12px; 
+    padding: 20px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02); 
+    display: flex; 
+    align-items: flex-start; 
+    gap: 15px; 
+}
+.stat-icon { 
+    width: 45px; 
+    height: 45px; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 20px; 
+}
+.icon-green { background: #e3ffe5; color: #28a745; border: 1px solid #c3e6cb; }
+.icon-blue { background: #e0f7fa; color: #17a2b8; border: 1px solid #bee5eb; }
+.icon-orange { background: #fff3cd; color: #ffc107; border: 1px solid #ffeeba; }
+.stat-info h6 { margin: 0; font-size: 0.9rem; color: #12263f; font-weight: 600; }
+.stat-info p { margin: 0; font-size: 0.8rem; color: #8898aa; }
+.stat-info .stat-number { font-size: 1.8rem; font-weight: 700; color: #12263f; margin-top: 5px; line-height: 1; }
+
+/* Badges */
+.badge-role { background: #e0f7fa; color: #17a2b8; padding: 6px 10px; border-radius: 6px; font-weight: 600; border: 1px solid #bee5eb; }
+.badge-soft-warning { background: #fff3cd; color: #856404; padding: 6px 10px; border-radius: 6px; font-weight: 600; border: 1px solid #ffeeba;}
+.badge-soft-primary { background: #cce5ff; color: #004085; padding: 6px 10px; border-radius: 6px; font-weight: 600; border: 1px solid #b8daff;}
+.badge-soft-success { background: #d4edda; color: #155724; padding: 6px 10px; border-radius: 6px; font-weight: 600; border: 1px solid #c3e6cb;}
+.badge-soft-danger { background: #f8d7da; color: #721c24; padding: 6px 10px; border-radius: 6px; font-weight: 600; border: 1px solid #f5c6cb;}
